@@ -1,0 +1,70 @@
+<ReltiveLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="Enter Your Favorite Scripture Below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scripture"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Scripture"
+        android:id="@+id/button"
+        android:layout_below="@+id/verse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:onClick="sendText"/>
+
+    // Text box for book
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Book"
+        android:id="@+id/book"
+        android:layout_below="@+id/scripture"
+        android:layout_marginTop="38dp"
+        android:layout_alignLeft="@+id/scripture"
+        android:layout_alignStart="@+id/scripture"
+        android:layout_alignRight="@+id/scripture"
+        android:layout_alignEnd="@+id/scripture" />
+
+    // Text box for chapter
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Chapter"
+        android:id="@+id/chapter"
+        android:inputType="number"
+        android:layout_below="@+id/book"
+        android:layout_alignLeft="@+id/book"
+        android:layout_alignStart="@+id/book"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/book"
+        android:layout_alignEnd="@+id/book" />
+
+    // Text box for verse
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Verse"
+        android:id="@+id/verse"
+        android:inputType="number"
+        android:layout_below="@+id/chapter"
+        android:layout_alignLeft="@+id/chapter"
+        android:layout_alignStart="@+id/chapter"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/chapter"
+        android:layout_alignEnd="@+id/chapter" />
+
+</RelativeLayout>
